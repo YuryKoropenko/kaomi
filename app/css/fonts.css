@@ -1,0 +1,35 @@
+/* PFDinDisplayPro-Regular */
+@font-face {
+  font-family: "PFDDP-Regular";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-reg.ttf);
+}
+
+/* PFDinDisplayPro-Bold */
+@font-face {
+  font-family: "PFDDP-Bold";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-bold.ttf);
+}
+
+/* PFDinDisplayPro-BoldItalic */
+@font-face {
+  font-family: "PFDDP-BoldItalic";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-boldital.ttf);
+}
+
+/* PFDinDisplayPro-Italic */
+@font-face {
+  font-family: "PFDDP-Italic";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-italic.ttf);
+}
+
+/* PFDinDisplayPro-Medium */
+@font-face {
+  font-family: "PFDDP-Medium";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-med.ttf);
+}
+
+/* PFDinDisplayPro-Light */
+@font-face {
+  font-family: "PFDDP-Light";
+  src: url(../fonts/PFDinDisplayPro/pfdindisplaypro-light.ttf);
+}

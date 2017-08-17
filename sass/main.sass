@@ -1,0 +1,250 @@
+@import "bourbon/bourbon"
+@import "sass/_vars"
+@import "sass/_custom"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "PFDDP-Regular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+.header
+	&__top
+		background-color: #333
+		height: 50px
+	&__bottom
+		padding-top: 33px
+		padding-bottom: 30px
+
+.main
+	&__top
+		min-height: 412px
+		background-color: #00009f
+		background-image: url(../img/index-fon.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+
+.h-topline
+	@extend .clearfix
+	&__left
+		float: left
+	&__right
+		float: right
+
+.h-logo
+	padding-left: 28px
+.h-phone
+	margin-top: -13px
+	padding-right: 36px
+.m-index
+	padding-left: 28px
+	min-height: 412px
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+
+.nav
+	font-size: 0
+	&__item
+		display: inline-block
+		padding: 0 10px
+	&__link
+		font-size: 18px
+		line-height: 50px
+		padding: 0 20px
+		color: #fff
+		display: block
+		position: relative
+		&::after
+			content: ''
+			height: 4px
+			width: 100%
+			display: block
+			background-color: transparent
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+		&:hover
+			text-decoration: none
+			color: #fff
+			border-color: #ff3068
+			&::after
+				background-color: #ff3068
+
+.logo
+	&__link
+		display: inline-block
+		@extend .clearfix
+	&__img
+		display: block
+		width: 207px
+		height: 44px
+		float: left
+	&__text
+		display: block
+		font-size: 16px
+		color: #666
+		float: left
+		margin-top: 3px
+		padding-left: 20px
+
+.openhours
+	padding-left: 24px
+	position: relative
+	&::before
+		content: ''
+		display: block
+		width: 14px
+		height: 14px
+		background-image: url(../img/icons/h-time.png)
+		background-repeat: no-repeat
+		background-position: center center
+		position: absolute
+		left: 0
+		top: 3px
+	&__text
+		color: #666
+		font-size: 15.64px
+	&__link
+		font-size: 16.63px
+		color: #666
+		text-decoration: underline
+		display: inline-block
+		margin-top: 6px
+		&:hover
+			color: #666
+			text-decoration: none
+
+.phone
+	text-align: right
+	&__number
+		font-size: 27.89px
+		color: #0000a0
+		line-height: 34px
+		font-family: "PFDDP-Bold", sans-serif
+		&-small
+			font-size: 20px
+			font-family: "PFDDP-Regular", sans-serif
+		&:hover
+			text-decoration: none
+			color: #0000a0
+	&__backcall
+		color: #666
+		font-size: 16px
+		text-decoration: underline
+		display: inline-block
+		margin-top: 2px
+		&:hover
+			color: #666
+			text-decoration: none
+
+.basicinformation
+	&__title
+		font-family: "PFDDP-Medium", sans-serif
+		font-size: 45px
+		text-transform: uppercase
+		color: #fff
+		line-height: 45px
+		&-small
+			text-transform: none
+			font-size: 40px
+	&__description
+		color: #f73366
+		font-size: 25px
+		display: inline-block
+		margin-top: 8px
+		margin-bottom: 20px
+	&__button
+		padding: 0 60px
+		height: 50px
+		border: 1px solid #fff
+		color: #fff
+		background-color: transparent
+		font-size: 18px
+
+.basicform
+	background-color: #fff
+	padding: 25px
+	position: relative
+	margin-bottom: 25px
+	width: 100%
+	&__title
+		text-align: center
+		color: #ed3068
+		font-size: 24px
+		font-family: "PFDDP-Bold", sans-serif
+	&__description
+		text-align: center
+		font-size: 18px
+		color: #ed3068
+		font-family: "PFDDP-Medium", sans-serif
+		padding-bottom: 20px
+	&__input
+		display: block
+		height: 50px
+		border: 1px solid #a0a0a0
+		width: 100%
+		margin-bottom: 20px
+		padding: 0 8px
+		text-align: center
+		box-sizing: border-box
+		font-family: "PFDDP-Light", sans-serif
+		color: #000
+	&__check
+		&-input
+			display: none
+		&-text
+			padding-left: 46px
+			display: inline-block
+			font-size: 14px
+			line-height: 12px
+			color: #666
+			position: relative
+			cursor: pointer
+			&::before
+				content: ''
+				width: 31px
+				height: 31px
+				position: absolute
+				border: 1px solid #9a9a9a
+				display: block
+				left: 0
+				top: 50%
+				margin-top: -15.5px
+				display: block
+			&::after
+				content: ''
+				width: 31px
+				height: 31px
+				background-image: url(../img/icons/b-check.png)
+				background-repeat: no-repeat
+				background-position: center center
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -15.5px
+				display: none
+		&-underl
+			text-decoration: underline
+	&__button
+		margin-bottom: -50px
+		display: block
+		width: 100%
+		box-sizing: border-box
+		margin-top: 20px
+
+/*стилизовать checkbox*/
+/*не забыть по картинку по центру*/
