@@ -14,46 +14,71 @@ body
 	display: none
 
 .header
+	/*lines start*/
+	&__line
+		position: relative
+		&-gray
+			background-color: #333
+			height: 50px
+		&-white
+			padding-top: 33px
+			padding-bottom: 30px
+		&-popular
+			min-height: 412px
+			background-color: #00009f
+			background-image: url(../img/index-fon.jpg)
+			background-repeat: no-repeat
+			background-position: center center
+			position: relative
+		&-img
+			position: absolute
+			display: block
+			left: 0
+			right: 0
+			margin: 0 auto
+			bottom: 0
+
+	/*line end*/
+	/*blocks start*/
 	&__top
-		background-color: #333
-		height: 50px
+		@extend .clearfix
+		&-left
+			float: left
+		&-right
+			float: right
 	&__bottom
-		padding-top: 33px
-		padding-bottom: 30px
-
-.main
-	&__top
+		&-left
+			padding-left: 28px
+		&-right
+			margin-top: -13px
+			padding-right: 36px
+	&__popular
 		min-height: 412px
-		background-color: #00009f
-		background-image: url(../img/index-fon.jpg)
-		background-repeat: no-repeat
-		background-position: center center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		&-left
+			padding-left: 28px
+		&-right
+			width: 100%
+	/*blocks end*/
+.main
+	&__section
+		&-white
+			background-color: #fff
+			padding-top: 40px
+		&-blue
+			background-color: #00009d
+		&-gray
+			background-color: #dde6ef
 
-.h-topline
-	@extend .clearfix
-	&__left
-		float: left
-	&__right
-		float: right
-
-.h-logo
-	padding-left: 28px
-.h-phone
-	margin-top: -13px
-	padding-right: 36px
-.m-index
-	padding-left: 28px
-	min-height: 412px
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	-webkit-align-items: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-
+/*components*/
 
 .nav
 	font-size: 0
@@ -246,5 +271,35 @@ body
 		box-sizing: border-box
 		margin-top: 20px
 
-/*стилизовать checkbox*/
-/*не забыть по картинку по центру*/
+.categoryItem
+	display: block
+	height: 228px
+	padding: 0 16px
+	&:hover
+		text-decoration: none
+		background-color: #ff2e67
+		.categoryItem__title
+			color: #fff
+	&__top
+		height: 150px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+	&__img
+		display: inline-block
+	&__bottom
+		height: 78px
+		text-align: center
+	&__title
+		display: inline-block
+		font-size: 25px
+		color: #303030
+		font-family: "PFDDP-Light", sans-serif

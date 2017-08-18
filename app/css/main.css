@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .h-topline:after, .logo__link:after {
+.clearfix:after, .header__top:after, .logo__link:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .h-topline:before, .logo__link:before {
+.clearfix:before, .header__top:before, .logo__link:before {
   content: '';
   display: table;
 }
@@ -60,6 +60,12 @@ i {
   font-family: "PFDDP-Italic", sans-serif;
 }
 
+h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  color: #303030;
+}
+
 /*buttons-start*/
 .btn {
   background-color: #f73366;
@@ -78,6 +84,22 @@ i {
 }
 
 /*buttons-end*/
+.title {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  padding: 0 50px;
+}
+
+/*стилизация checkbox start*/
+.basicform__check-input:checked + .basicform__check-text:after {
+  display: block;
+}
+
+/*стилизация checkbox end*/
 /*default-end*/
 body {
   font-size: 16px;
@@ -92,43 +114,63 @@ body {
   display: none;
 }
 
-.header__top {
+.header {
+  /*lines start*/
+  /*line end*/
+  /*blocks start*/
+  /*blocks end*/
+}
+
+.header__line {
+  position: relative;
+}
+
+.header__line-gray {
   background-color: #333;
   height: 50px;
 }
 
-.header__bottom {
+.header__line-white {
   padding-top: 33px;
   padding-bottom: 30px;
 }
 
-.main__top {
+.header__line-popular {
   min-height: 412px;
   background-color: #00009f;
   background-image: url(../img/index-fon.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 }
 
-.h-topline__left {
+.header__line-img {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.header__top-left {
   float: left;
 }
 
-.h-topline__right {
+.header__top-right {
   float: right;
 }
 
-.h-logo {
+.header__bottom-left {
   padding-left: 28px;
 }
 
-.h-phone {
+.header__bottom-right {
   margin-top: -13px;
   padding-right: 36px;
 }
 
-.m-index {
-  padding-left: 28px;
+.header__popular {
   min-height: 412px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -141,6 +183,28 @@ body {
   align-items: center;
 }
 
+.header__popular-left {
+  padding-left: 28px;
+}
+
+.header__popular-right {
+  width: 100%;
+}
+
+.main__section-white {
+  background-color: #fff;
+  padding-top: 40px;
+}
+
+.main__section-blue {
+  background-color: #00009d;
+}
+
+.main__section-gray {
+  background-color: #dde6ef;
+}
+
+/*components*/
 .nav {
   font-size: 0;
 }
@@ -390,5 +454,48 @@ body {
   margin-top: 20px;
 }
 
-/*стилизовать checkbox*/
-/*не забыть по картинку по центру*/
+.categoryItem {
+  display: block;
+  height: 228px;
+  padding: 0 16px;
+}
+
+.categoryItem:hover {
+  text-decoration: none;
+  background-color: #ff2e67;
+}
+
+.categoryItem:hover .categoryItem__title {
+  color: #fff;
+}
+
+.categoryItem__top {
+  height: 150px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.categoryItem__img {
+  display: inline-block;
+}
+
+.categoryItem__bottom {
+  height: 78px;
+  text-align: center;
+}
+
+.categoryItem__title {
+  display: inline-block;
+  font-size: 25px;
+  color: #303030;
+  font-family: "PFDDP-Light", sans-serif;
+}
