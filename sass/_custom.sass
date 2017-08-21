@@ -70,12 +70,49 @@ h2
 /*buttons-end*/
 .title
 	text-align: center
-	padding-bottom: 10px
+	padding-bottom: 20px
 .description
 	text-align: center
-	padding: 0 50px
+	padding: 0 50px 30px
 /*стилизация checkbox start*/
 .basicform__check-input:checked + .basicform__check-text:after
 	display: block
 /*стилизация checkbox end*/
+.slick-arrow
+	text-indent: -9999px
+	width: 50px
+	height: 50px
+	position: absolute
+	border: 1px solid #9a9a9a
+	background-color: transparent
+	z-index: 2
+	bottom: 30px
+	background-repeat: no-repeat
+	background-position: center center
+	&:hover
+		border-color: #ff3068
+.slick-prev
+	left: 28px
+	background-image: url(../img/arrow-left.png)
+	&:hover
+		background-image: url(../img/arrow-left-active.png)
+.slick-next
+	left: 98px
+	background-image: url(../img/arrow-right.png)
+	&:hover
+		background-image: url(../img/arrow-right-active.png)
+
+.b-flex
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-align-items: center
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+
+.col-md-6.b-flex
+	min-height: 466px
 /*default-end*/
