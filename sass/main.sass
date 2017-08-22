@@ -77,6 +77,7 @@ body
 			background-color: #00009d
 		&-gray
 			background-color: #dde6ef
+			padding-top: 40px
 		&-ots
 			padding: 0 28px
 
@@ -201,6 +202,9 @@ body
 		color: #fff
 		background-color: transparent
 		font-size: 18px
+		&:hover
+			background-color: #cc3366
+			border-color: #cc3366
 
 .basicform
 	background-color: #fff
@@ -230,7 +234,57 @@ body
 		box-sizing: border-box
 		font-family: "PFDDP-Light", sans-serif
 		color: #000
+	&__textarea
+		display: block
+		height: 70px
+		border: 1px solid #a0a0a0
+		width: 100%
+		margin-bottom: 20px
+		padding: 8px
+		text-align: center
+		box-sizing: border-box
+		font-family: "PFDDP-Light", sans-serif
+		color: #000
+	&__radio
+		min-height: 31px
+		&-input
+			display: none
+		&-text
+			padding-left: 46px
+			display: inline-block
+			font-size: 14px
+			line-height: 12px
+			color: #666
+			position: relative
+			cursor: pointer
+			&::before
+				content: ''
+				width: 31px
+				height: 31px
+				position: absolute
+				border: 1px solid #9a9a9a
+				border-radius: 50%
+				display: block
+				left: 0
+				top: 50%
+				margin-top: -15.5px
+				display: block
+			&::after
+				content: ''
+				width: 13px
+				height: 13px
+				background-color: #9a9a9a
+				border-radius: 50%
+				background-repeat: no-repeat
+				background-position: center center
+				position: absolute
+				left: 9px
+				top: 50%
+				transform: translateY(-50%)
+				-webkit-transform: translateY(-50%)
+				display: none
 	&__check
+		min-height: 31px
 		&-input
 			display: none
 		&-text
@@ -275,7 +329,7 @@ body
 
 .categoryItem
 	display: block
-	height: 228px
+	height: 245px
 	padding: 0 16px
 	&:hover
 		text-decoration: none
@@ -630,3 +684,199 @@ body
 			text-align: left
 			padding-top: 57px
 			padding-left: 10px
+
+.clients
+	padding-bottom: 20px
+	&__item
+		height: 90px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+	&__img
+		display: inline-block
+
+.reviews-wrapper
+	top: 90px
+	background-color: #fff
+	left: 0
+	right: 0
+	position: absolute
+	padding-bottom: 40px
+
+.reviews
+	margin-top: -35px
+	&__slider
+		.slick-arrow
+			bottom: -130px
+			background-color: #fff !important
+		.slick-prev
+			left: -70px
+			right: 0
+			margin: 0 auto
+		.slick-next
+			left: 0
+			right: -70px
+			margin: 0 auto
+	&__item
+		text-align: center
+	&__img
+		display: inline-block !important
+		margin-bottom: 25px
+	&__name
+		display: block
+		color: #ff2e67
+		font-size: 19px
+		font-family: "PFDDP-Medium", sans-serif
+	&__subtitle
+		display: block
+		color: #000
+		font-size: 14px
+	&__description
+		display: block
+		font-size: 14px
+
+.footer
+	background-color: #0000a0
+	&__line
+		padding-bottom: 30px;
+		padding-top: 33px;
+
+.copy
+	&__text
+		font-size: 15px
+		color: #fff
+		padding-top: 4px
+
+.sitemap
+	text-align: right
+	padding-right: 28px
+	padding-top: 3px
+	&__text
+		text-transform: uppercase
+		font-size: 14px
+		letter-spacing: 0.5px
+		color: #fff
+		display: inline-block
+		padding-bottom: 6px
+	&__link
+		display: inline-block
+		width: 88px
+		height: 15px
+		background-image: url(../img/ban.jpg)
+		background-repeat: no-repeat
+		background-position: center center
+
+.ourteam
+	&__title
+		font-size: 50px
+		color: #333
+		display: block
+		text-align: center
+	&__description
+		text-align: center
+		display: block
+		color: #000
+		font-size: 16px
+	&__item
+		padding: 20px 0
+	&__top
+		width: 140px
+		height: 140px
+		border-radius: 50%
+		overflow: hidden
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		-webkit-align-items: center
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		justify-content: center
+		-webkit-justify-content: center
+		background-color: #dee6ef
+		margin: 0 auto 20px
+	&__img
+	&__name
+		display: block
+		text-align: center
+		color: #f83265
+		font-size: 20px
+		font-family: "PFDDP-Medium", sans-serif
+	&__prof
+		color: #000
+		font-size: 14px
+		text-align: center
+		padding-top: 10px
+
+/*form*/
+.form-backcall
+	width: 320px
+
+.form-label
+	color: #666
+	font-size: 16px
+	display: block
+	font-family: "PFDDP-Light", sans-serif
+	text-align: left
+	padding: 0 20px 10px
+
+.form-add
+	height: 50px
+	display: block
+	line-height: 24px
+	border: 1px solid #a0a0a0
+	width: 100%
+	margin-bottom: 20px
+	margin-top: 30px
+	padding: 0 8px
+	text-align: center
+	box-sizing: border-box
+	font-family: "PFDDP-Light", sans-serif
+	color: #000
+
+.form-add__textarea
+	text-align: left
+	padding-left: 20px
+	padding-right: 20px
+	resize: none
+
+.input__file
+	position: relative
+	overflow: hidden
+	width: 100%
+	height: 50px
+	background-color: transparent
+	line-height: 48px
+	text-align: center
+	border: 1px solid #a0a0a0
+	color: #a0a0a0
+	margin-bottom: 24px
+	input[type="file"]
+		display: none
+	label
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		cursor: pointer
+	span
+		line-height: 36px
+
+.file__text
+	font-size: 14px
+	line-height: 12px
+	color: #666
+	text-align: left
+	padding-top: 12px

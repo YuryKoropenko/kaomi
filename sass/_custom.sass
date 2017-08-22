@@ -57,6 +57,7 @@ h2
 /*buttons-start*/
 .btn
 	background-color: #f73366
+	border: 3px solid #f73366
 	border: none
 	padding: 0 46px
 	height: 50px
@@ -65,8 +66,16 @@ h2
 	font-family: "PFDDP-Regular", sans-serif
 	letter-spacing: 0,06em
 	color: #fff
+	border: 3px solid #f73366
+	display: inline-block
+	line-height: 44px
 	&:active
 		background-color: #ff3068
+	&:hover
+		background-color: #fff
+		color: #f73366
+		border-color: #f73366
+
 /*buttons-end*/
 .title
 	text-align: center
@@ -76,6 +85,8 @@ h2
 	padding: 0 50px 30px
 /*стилизация checkbox start*/
 .basicform__check-input:checked + .basicform__check-text:after
+	display: block
+.basicform__radio-input:checked + .basicform__radio-text:after
 	display: block
 /*стилизация checkbox end*/
 .slick-arrow
@@ -115,4 +126,186 @@ h2
 
 .col-md-6.b-flex
 	min-height: 466px
+
+.content
+	h1
+		color: #333
+		font-size: 45px
+		display: block
+		text-align: center
+	h2
+		color: #333
+		font-size: 30px
+		display: block
+		text-align: center
+	h3
+		color: #f83265
+		font-size: 25px
+		display: block
+		text-align: center
+		font-family: "PFDDP-Medium", sans-serif
+	h4
+		color: #f83265
+		font-size: 20px
+		display: block
+		text-align: center
+		font-family: "PFDDP-Medium", sans-serif
+	h5
+		color: #f83265
+		font-size: 19px
+		display: block
+		text-align: center
+		font-family: "PFDDP-Medium", sans-serif
+	p
+		font-size: 16px
+		color: #000
+	a
+		font-size: inherit
+		color: #00009c
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: #00009c
+	blockquote
+		text-align: left
+		font-family: "PFDDP-Italic", sans-serif
+		padding-left: 30px
+		padding-right: 30px
+		font-size: 17px
+		color: #363636
+		position: relative
+		&::before
+			content: '«'
+			position: absolute
+			left: 0
+			top: -12px
+			font-size: 36px
+			font-family: "PFDDP-Bold", sans-serif
+			color: #989898
+			line-height: 36px
+		&::after
+			content: '»'
+			position: absolute
+			right: 0
+			bottom: -4px
+			font-size: 36px
+			font-family: "PFDDP-Bold", sans-serif
+			color: #989898
+			line-height: 36px
+	&__list
+		padding-left: 40px
+		padding-right: 40px
+		ul
+			b
+				display: block
+				position: relative
+				&::before
+					content: ''
+					width: 26px
+					height: 23px
+					display: block
+					background-image: url(../img/icons/marker.png)
+					background-repeat: no-repeat
+					background-position: center center
+					position: absolute
+					left: -50px
+					top: 0
+		ol
+			b
+				display: block
+				position: relative
+				&::before
+					content: '01/'
+					color: #999
+					font-size: 25px
+					position: absolute
+					left: -50px
+					top: 0
+	&__block
+		text-align: center
+		padding: 30px 20px 40px
+		position: relative
+		margin-bottom: 26px
+		box-sizing: border-box
+		h1, h2, h3, h4, h5
+			text-align: left
+		.btn
+			text-transform: none
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			width: 230px
+			margin: 0 auto
+			margin-bottom: -26px
+		&-frame
+			border: 3px solid #ff3366
+		&-fon
+			border: 3px solid transparent
+	ul, ol
+		b
+			font-size: 22px
+			color: #f36
+		li
+			display: block
+			padding-left: 20px
+			position: relative
+			font-size: 17px
+			color: #000
+			font-family: "PFDDP-Light", sans-serif
+			margin-bottom: 18px
+			text-align: left
+			&::before
+				content: ''
+				width: 8px
+				height: 8px
+				display: block
+				border-radius: 50%
+				background-color: #ff2e67
+				position: absolute
+				left: 0
+				top: 8px
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	background-color: transparent
+	border-color: #9b9b9b
+	color: #9b9b9b
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+	background-color: transparent
+	border-color: #9b9b9b
+	color: #9b9b9b
+.ui-selectmenu-button.ui-button
+	width: 100%
+	height: 50px
+	padding: 0 30px 0 18px
+	line-height: 50px
+	background-image: url(../img/icons/figure.png)
+	background-repeat: no-repeat
+	background-position: 222px center
+.ui-selectmenu-button-open
+	background-image: url(../img/icons/figure-active.png) !important
+.ui-widget.ui-widget-content
+	border-color: #9b9b9b
+.ui-menu .ui-menu-item-wrapper
+	padding: 12px 18px
+	color: #9b9b9b
+	border-top: none
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background-color: transparent
+	color: #f83265
+	border: none
+	border: 1px solid #9b9b9b !important
+.ui-widget.ui-widget-content
+	border: none
+.ui-menu-item
+	border: 1px solid #9b9b9b
+	border-top: none
+.ui-selectmenu-icon
+	display: none !important
+
+.modal-dialog-callback
+	width: 320px
+
+.input__check
+	label
+		font-size: 16px
 /*default-end*/
