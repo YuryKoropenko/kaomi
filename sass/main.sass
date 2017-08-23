@@ -843,6 +843,7 @@ body
 	box-sizing: border-box
 	font-family: "PFDDP-Light", sans-serif
 	color: #000
+	cursor: pointer
 
 .form-add__textarea
 	text-align: left
@@ -861,6 +862,7 @@ body
 	border: 1px solid #a0a0a0
 	color: #a0a0a0
 	margin-bottom: 24px
+	cursor: pointer
 	input[type="file"]
 		display: none
 	label
@@ -880,3 +882,12 @@ body
 	color: #666
 	text-align: left
 	padding-top: 12px
+
+.waysof
+	&__left, &__right
+		&-2, &-3, &-4, &-5
+			display: none
+
+a
+	&:active, &:focus
+		text-decoration: none

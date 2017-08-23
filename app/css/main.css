@@ -81,16 +81,28 @@ h2 {
   border: 3px solid #f73366;
   display: inline-block;
   line-height: 44px;
+  text-align: center;
 }
 
 .btn:active {
   background-color: #ff3068;
+  text-decoration: none;
 }
 
 .btn:hover {
   background-color: #fff;
   color: #f73366;
   border-color: #f73366;
+  text-decoration: none;
+}
+
+.btn:focus {
+  text-decoration: none;
+}
+
+.btn-modal:hover, .btn-modal:focus, .btn-modal:active {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*buttons-end*/
@@ -405,6 +417,14 @@ h2 {
 
 .modal-dialog-callback {
   width: 320px;
+}
+
+.ui-front {
+  z-index: 2000 !important;
+}
+
+.modal-content .ui-selectmenu-button.ui-button {
+  background-position: 176px center !important;
 }
 
 .input__check label {
@@ -1524,6 +1544,7 @@ body {
   box-sizing: border-box;
   font-family: "PFDDP-Light", sans-serif;
   color: #000;
+  cursor: pointer;
 }
 
 .form-add__textarea {
@@ -1544,6 +1565,7 @@ body {
   border: 1px solid #a0a0a0;
   color: #a0a0a0;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .input__file input[type="file"] {
@@ -1570,4 +1592,12 @@ body {
   color: #666;
   text-align: left;
   padding-top: 12px;
+}
+
+.waysof__left-2, .waysof__left-3, .waysof__left-4, .waysof__left-5, .waysof__right-2, .waysof__right-3, .waysof__right-4, .waysof__right-5 {
+  display: none;
+}
+
+a:active, a:focus {
+  text-decoration: none;
 }

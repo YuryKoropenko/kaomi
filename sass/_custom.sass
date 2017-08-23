@@ -69,12 +69,22 @@ h2
 	border: 3px solid #f73366
 	display: inline-block
 	line-height: 44px
+	text-align: center
 	&:active
 		background-color: #ff3068
+		text-decoration: none
 	&:hover
 		background-color: #fff
 		color: #f73366
 		border-color: #f73366
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+.btn-modal
+	&:hover, &:focus, &:active
+		color: #fff
+		text-decoration: none
 
 /*buttons-end*/
 .title
@@ -304,6 +314,12 @@ h2
 
 .modal-dialog-callback
 	width: 320px
+
+.ui-front
+	z-index: 2000 !important
+
+.modal-content .ui-selectmenu-button.ui-button
+	background-position: 176px center !important
 
 .input__check
 	label

@@ -36,7 +36,7 @@
     top: 20px;
   }
   .reviews__slider .slick-arrow {
-    bottom: -114px;
+    bottom: -132px;
   }
   .wdyn {
     height: 540px;
@@ -375,6 +375,29 @@
     padding: 0 15px;
     margin-bottom: 80px;
     position: relative;
+  }
+  .product-carousel {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+    width: auto;
+  }
+  .slick-prev {
+    left: 83px;
+    right: auto;
+  }
+  .slick-next {
+    right: 83px;
+    left: auto;
+  }
+  .product-carousel__control {
+    text-align: center;
+  }
+  .steps {
+    padding-bottom: 0;
+  }
+  .steps__content,
+  .steps__item {
+    padding-top: 0;
   }
   /**/
 }

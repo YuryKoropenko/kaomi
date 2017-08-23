@@ -116,9 +116,9 @@
   z-index: 10;
   left: 0;
   top: 0;
+  bottom: 5px;
   background: #fff;
   width: 50%;
-  height: 100%;
   padding: 50px 25px;
 }
 .map-info__item{
