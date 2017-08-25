@@ -1,4 +1,11 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width: 1299px) {
+  .reviews__slider .slick-arrow {
+    bottom: -112px;
+  }
+}
+
+/**/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
   .btn {
@@ -36,7 +43,7 @@
     top: 20px;
   }
   .reviews__slider .slick-arrow {
-    bottom: -132px;
+    bottom: -112px;
   }
   .wdyn {
     height: 540px;
@@ -46,6 +53,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
+  .form-label {
+    padding: 10px 10px 5px;
+  }
   .nav__link {
     font-size: 16px;
     padding: 0 8px;
@@ -136,6 +146,9 @@
   }
   .header__top-left {
     display: none;
+  }
+  .reviews__slider .slick-arrow {
+    bottom: -132px;
   }
   /**/
 }
@@ -327,6 +340,7 @@
   }
   .question {
     min-height: auto;
+    height: auto;
     border: none;
   }
   .question__img {
@@ -399,11 +413,23 @@
   .steps__item {
     padding-top: 0;
   }
+  .waysof__left {
+    background-size: 100% auto;
+  }
+  .reviews-wrapper {
+    position: static;
+  }
+  .reviews__slider .slick-arrow {
+    bottom: -115px;
+  }
   /**/
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .modal-dialog-callback {
+    width: auto;
+  }
   /**/
 }
 

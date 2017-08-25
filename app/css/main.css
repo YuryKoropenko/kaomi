@@ -424,7 +424,7 @@ h2 {
 }
 
 .modal-content .ui-selectmenu-button.ui-button {
-  background-position: 176px center !important;
+  background-position: 96% center !important;
 }
 
 .input__check label {
@@ -439,6 +439,7 @@ body {
   line-height: 1.25;
   font-family: "PFDDP-Regular", sans-serif;
   overflow-x: hidden;
+  padding-top: 50px;
 }
 
 .hidden {
@@ -459,6 +460,11 @@ body {
 .header__line-gray {
   background-color: #333;
   height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .header__line-white {
@@ -1159,19 +1165,19 @@ body {
   position: relative;
 }
 
-.wdyn:hover {
-  background-color: #0000a0;
+.wdyn-blue {
+  background-color: #00009d;
 }
 
-.wdyn:hover .wdyn__title {
+.wdyn-blue .wdyn__title {
   color: #fff;
 }
 
-.wdyn:hover .wdyn__description {
+.wdyn-blue .wdyn__description {
   color: #fff;
 }
 
-.wdyn:hover .wdyn__button {
+.wdyn-blue .wdyn__button {
   display: block;
 }
 
@@ -1229,7 +1235,7 @@ body {
 }
 
 .question {
-  min-height: 395px;
+  height: 395px;
   position: relative;
   border: 3px solid #ff3368;
   margin-bottom: 70px;
@@ -1600,4 +1606,12 @@ body {
 
 a:active, a:focus {
   text-decoration: none;
+}
+
+.animated {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible !important;
 }
